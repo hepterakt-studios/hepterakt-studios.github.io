@@ -15,13 +15,6 @@
   <div class="site-glow site-glow-two"></div>
   <div class="grain"></div>
 
-  <div id="contact-loader" class="contact-loader" aria-hidden="true">
-    <div class="loader-card">
-      <lottie-player src="assets/lottie/loading-percent.json" background="transparent" speed="1" autoplay></lottie-player>
-      <p>Opening contact...</p>
-    </div>
-  </div>
-
   <header class="header">
     <a class="brand" href="#home" aria-label="Hepterakt Studios home">
       <img src="assets/hepterakt-symbol.png" alt="Hepterakt Studios symbol" class="brand-logo" />
@@ -35,30 +28,44 @@
       <a href="#intro">Intro</a>
       <a href="#projects">Projects</a>
       <a href="#about">About</a>
-      <a href="mailto:hepteraktstudios@gmail.com" class="contact-link">Contact</a>
+      <a href="mailto:hepteraktstudios@gmail.com">Contact</a>
     </nav>
   </header>
 
   <main id="home">
     <section class="hero">
-      <div class="side-lottie side-left" aria-hidden="true">
-        <lottie-player src="assets/lottie/energy-fire.json" background="transparent" speed=".65" loop autoplay></lottie-player>
-      </div>
+      <div class="hero-visual">
+        <div class="side-lottie side-left" aria-hidden="true">
+          <lottie-player
+            src="assets/lottie/energy-fire.json"
+            background="transparent"
+            speed=".8"
+            loop
+            autoplay>
+          </lottie-player>
+        </div>
 
-      <div class="side-lottie side-right" aria-hidden="true">
-        <lottie-player src="assets/lottie/info-coin.json" background="transparent" speed=".75" loop autoplay></lottie-player>
-      </div>
+        <div class="cube-stage">
+          <div class="cube-glow"></div>
+          <lottie-player
+            class="main-cube"
+            src="assets/lottie/modular-cube.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay>
+          </lottie-player>
+        </div>
 
-      <div class="cube-stage">
-        <div class="cube-glow"></div>
-        <lottie-player
-          class="main-cube"
-          src="assets/lottie/modular-cube.json"
-          background="transparent"
-          speed="1"
-          loop
-          autoplay>
-        </lottie-player>
+        <div class="side-lottie side-right" aria-hidden="true">
+          <lottie-player
+            src="assets/lottie/info-coin.json"
+            background="transparent"
+            speed=".75"
+            loop
+            autoplay>
+          </lottie-player>
+        </div>
       </div>
 
       <a class="scroll-cue" href="#intro" aria-label="Scroll to intro">
@@ -76,7 +83,7 @@
 
       <div class="hero-actions">
         <a class="button primary" href="#projects">View Projects</a>
-        <a class="button secondary contact-link" href="mailto:hepteraktstudios@gmail.com">Contact</a>
+        <a class="button secondary" href="mailto:hepteraktstudios@gmail.com">Contact</a>
       </div>
     </section>
 
@@ -127,7 +134,7 @@
         <p>For projects, collaborations or business inquiries.</p>
       </div>
       <div class="contact-actions">
-        <a class="button primary contact-link" href="mailto:hepteraktstudios@gmail.com">Email</a>
+        <a class="button primary" href="mailto:hepteraktstudios@gmail.com">Email</a>
         <a class="button secondary" href="https://github.com/hepterakt-studios" target="_blank" rel="noreferrer">GitHub</a>
       </div>
     </section>
