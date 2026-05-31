@@ -1,16 +1,18 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
-const lottie = document.querySelector("lottie-player");
-const fallback = document.querySelector(".lottie-fallback");
+const loader = document.getElementById("contact-loader");
+const contactLinks = document.querySelectorAll(".contact-link");
 
-function hideFallback() {
-  if (fallback) fallback.style.opacity = "0";
-}
+contactLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
 
-if (lottie) {
-  lottie.addEventListener("ready", hideFallback);
-  lottie.addEventListener("load", hideFallback);
-  setTimeout(() => {
-    if (lottie.shadowRoot || lottie.getLottie) hideFallback();
-  }, 1400);
-}
+    const href = link.getAttribute("href");
+
+    loader?.classList.add("is-active");
+
+    setTimeout(() => {
+      window.location.href = href;
+    }, 1550);
+  });
+});

@@ -1,13 +1,8 @@
-# Hepterakt Studios Website V2
-
-Updated static landing page.
+# Hepterakt Studios Website V5
 
 Changes:
-- Symbol-only Hepterakt logo at the top.
-- Lottie animation stage in the hero area.
-- Main text appears only after scrolling down.
-- Dark background with subtle light/glow.
-
-Note: this Lottie JSON references 240 external image assets under paths like /images/1.webp. If the animation does not render, upload the missing images folder too.
-
-Upload all files to the root of the `hepterakt-studios.github.io` repository.
+- Modular cube Lottie is the main center animation.
+- Fire Lottie is a small side decoration.
+- Info coin Lottie is a small side decoration.
+- Loading percent Lottie appears only when clicking contact/email, then redirects to mailto:hepteraktstudios@gmail.com.
+- Removed central logo from hero. Real logo stays only in header.
