@@ -13,9 +13,9 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(circle at 50% 14%, rgba(255,255,255,.105), transparent 26rem),
-    radial-gradient(circle at 50% 45%, rgba(255,255,255,.055), transparent 34rem),
-    radial-gradient(circle at 85% 20%, rgba(255,255,255,.035), transparent 24rem),
+    radial-gradient(circle at 50% 9%, rgba(255,255,255,.12), transparent 25rem),
+    radial-gradient(circle at 50% 46%, rgba(255,255,255,.06), transparent 38rem),
+    radial-gradient(circle at 86% 22%, rgba(255,255,255,.035), transparent 28rem),
     var(--bg);
   color: var(--text);
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -28,8 +28,8 @@ body::before {
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(to bottom, rgba(255,255,255,.03), transparent 18rem),
-    radial-gradient(circle at center, transparent 0, rgba(0,0,0,.48) 75%);
+    linear-gradient(to bottom, rgba(255,255,255,.028), transparent 22rem),
+    radial-gradient(circle at center, transparent 0, rgba(0,0,0,.52) 76%);
   z-index: -2;
 }
 
@@ -37,25 +37,25 @@ body::before {
   position: fixed;
   border-radius: 999px;
   pointer-events: none;
-  filter: blur(95px);
-  opacity: .72;
+  filter: blur(100px);
+  opacity: .78;
   z-index: -3;
 }
 
 .site-glow-one {
-  top: -8rem;
+  top: -9rem;
   left: 50%;
-  width: 38rem;
-  height: 38rem;
+  width: 42rem;
+  height: 42rem;
   transform: translateX(-50%);
-  background: rgba(255,255,255,.075);
+  background: rgba(255,255,255,.08);
 }
 
 .site-glow-two {
-  right: -10rem;
-  bottom: 5rem;
-  width: 28rem;
-  height: 28rem;
+  right: -12rem;
+  bottom: 8rem;
+  width: 32rem;
+  height: 32rem;
   background: rgba(255,255,255,.045);
 }
 
@@ -63,7 +63,7 @@ body::before {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  opacity: .06;
+  opacity: .055;
   background-image: repeating-radial-gradient(circle at 0 0, rgba(255,255,255,.35) 0 1px, transparent 1px 4px);
   z-index: -1;
   mix-blend-mode: screen;
@@ -95,7 +95,6 @@ body::before {
 }
 
 .brand-text { display: grid; gap: 2px; line-height: 1; }
-
 .brand-text strong { letter-spacing: .24em; font-size: .86rem; }
 .brand-text small { letter-spacing: .34em; color: rgba(255,255,255,.52); font-size: .65rem; }
 
@@ -109,39 +108,136 @@ body::before {
 .nav a:hover { color: white; }
 
 .hero {
-  width: min(1120px, calc(100% - 32px));
-  min-height: calc(100vh - 96px);
+  width: min(1180px, calc(100% - 32px));
+  min-height: calc(100vh - 92px);
   margin: 0 auto;
   display: grid;
-  place-items: center;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+  align-items: center;
+  padding: 20px 0 34px;
   text-align: center;
-  padding: 42px 0 100px;
 }
 
-.hero-logo-wrap {
-  width: min(520px, 88vw);
+.hero-symbol-wrap {
+  width: min(210px, 44vw);
   aspect-ratio: 1;
+  position: relative;
   display: grid;
   place-items: center;
-  margin-bottom: -16px;
-  position: relative;
 }
 
-.hero-logo-wrap::before {
+.hero-symbol-wrap::before,
+.lottie-stage::before {
   content: "";
   position: absolute;
-  inset: 18%;
+  inset: 12%;
   border-radius: 50%;
-  background: rgba(255,255,255,.08);
-  filter: blur(55px);
+  background: rgba(255,255,255,.075);
+  filter: blur(45px);
   z-index: -1;
 }
 
-.hero-logo {
+.hero-symbol {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: drop-shadow(0 0 26px rgba(255,255,255,.12));
+  filter: drop-shadow(0 0 18px rgba(255,255,255,.14));
+}
+
+.lottie-stage {
+  width: min(780px, 94vw);
+  aspect-ratio: 16 / 9;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 34px;
+  border: 1px solid rgba(255,255,255,.08);
+  background:
+    radial-gradient(circle at 50% 40%, rgba(255,255,255,.06), transparent 62%),
+    rgba(255,255,255,.018);
+  box-shadow: 0 40px 120px rgba(0,0,0,.42);
+}
+
+lottie-player {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.lottie-fallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+}
+
+.fallback-screen {
+  width: min(460px, 76%);
+  min-height: 230px;
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(0,0,0,.45);
+  display: grid;
+  place-items: center;
+  gap: 8px;
+  padding: 30px;
+}
+
+.fallback-screen span {
+  width: 72%;
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.12);
+}
+
+.fallback-screen span:nth-child(2) { width: 54%; }
+.fallback-screen span:nth-child(3) { width: 64%; }
+
+.fallback-screen code {
+  margin-top: 14px;
+  color: rgba(255,255,255,.58);
+  letter-spacing: .14em;
+}
+
+.scroll-cue {
+  color: rgba(255,255,255,.52);
+  text-decoration: none;
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  letter-spacing: .26em;
+  font-size: .72rem;
+  font-weight: 800;
+}
+
+.scroll-cue i {
+  width: 1px;
+  height: 42px;
+  display: block;
+  background: linear-gradient(to bottom, rgba(255,255,255,.8), transparent);
+  animation: cue 1.35s ease-in-out infinite;
+}
+
+@keyframes cue {
+  0%, 100% { transform: translateY(0); opacity: .45; }
+  50% { transform: translateY(8px); opacity: 1; }
+}
+
+.intro-section {
+  width: min(1120px, calc(100% - 32px));
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  text-align: center;
+  padding: 110px 0;
 }
 
 .eyebrow {
@@ -290,8 +386,8 @@ h1 {
 
 @media (max-width: 820px) {
   .nav { display: none; }
-  .hero { padding-top: 30px; }
-  .hero-logo-wrap { width: min(390px, 94vw); }
+  .hero-symbol-wrap { width: min(155px, 42vw); }
+  .lottie-stage { width: 96vw; border-radius: 24px; }
   .cards, .contact-box { grid-template-columns: 1fr; }
   .footer { flex-direction: column; }
 }
