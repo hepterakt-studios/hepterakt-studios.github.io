@@ -1,9 +1,10 @@
-# Hepterakt Studios Website V7
+# Hepterakt Studios Website V8 Final Hero
 
-Corrected hero:
-- Fire Lottie small on the left side.
-- Modular cube Lottie large in the center.
-- Coin/info Lottie small on the right side.
+Final hero correction:
 - No loading overlay.
+- No scroll text.
 - No central static logo.
-- Header keeps the real Hepterakt logo.
+- Modular cube Lottie is large and centered.
+- Fire Lottie is small on the left.
+- Coin/info Lottie is small on the right.
+- Intro content starts only after the hero section.
