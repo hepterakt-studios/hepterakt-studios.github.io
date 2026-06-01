@@ -817,3 +817,106 @@ h1 {
     height: 42px !important;
   }
 }
+
+
+/* V21: restore decorative cubes across the page and make them white/original-looking */
+
+/* Header logo stays compact and clean */
+.brand-mark,
+.site-header.is-scrolled .brand-mark,
+.site-header.logo-only .brand-mark {
+  width: 46px !important;
+  height: 46px !important;
+  min-width: 46px !important;
+  min-height: 46px !important;
+  max-width: 46px !important;
+  max-height: 46px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+
+.brand-mark img {
+  width: 46px !important;
+  height: 46px !important;
+  max-width: 46px !important;
+  max-height: 46px !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,.22)) !important;
+}
+
+/* Decorations use white Lottie files now; keep filters light so black outlines remain clean */
+.page-decor {
+  display: block !important;
+  opacity: .86 !important;
+  filter:
+    drop-shadow(0 0 18px rgba(255,255,255,.18)) !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+
+/* HERO CUBES - same visual scale, pushed into side spaces */
+.page-decor-1 { width: 210px !important; height: 210px !important; left: -38px !important; top: 27vh !important; opacity: .82 !important; }
+.page-decor-2 { width: 210px !important; height: 210px !important; right: -38px !important; top: 27vh !important; opacity: .80 !important; }
+.page-decor-3 { width: 205px !important; height: 205px !important; left: 175px !important; top: 20vh !important; opacity: .72 !important; }
+.page-decor-4 { width: 205px !important; height: 205px !important; right: 175px !important; top: 20vh !important; opacity: .72 !important; }
+
+.page-decor-5 { width: 195px !important; height: 195px !important; left: -24px !important; top: 64vh !important; opacity: .70 !important; }
+.page-decor-6 { width: 195px !important; height: 195px !important; right: -24px !important; top: 64vh !important; opacity: .70 !important; }
+.page-decor-7 { width: 190px !important; height: 190px !important; left: 190px !important; top: 69vh !important; opacity: .62 !important; }
+.page-decor-8 { width: 190px !important; height: 190px !important; right: 190px !important; top: 69vh !important; opacity: .62 !important; }
+
+/* RESTORED LOWER PAGE CUBES - positioned in outer margins, not inside cards */
+.page-decor-9 { width: 205px !important; height: 205px !important; left: -42px !important; top: 145vh !important; opacity: .64 !important; }
+.page-decor-10 { width: 205px !important; height: 205px !important; right: -42px !important; top: 162vh !important; opacity: .64 !important; }
+
+.page-decor-11 { width: 190px !important; height: 190px !important; left: 56px !important; top: 214vh !important; opacity: .54 !important; }
+.page-decor-12 { width: 190px !important; height: 190px !important; right: 56px !important; top: 232vh !important; opacity: .54 !important; }
+
+.page-decor-13 { width: 200px !important; height: 200px !important; left: -44px !important; top: 292vh !important; opacity: .56 !important; }
+.page-decor-14 { width: 200px !important; height: 200px !important; right: -44px !important; top: 322vh !important; opacity: .56 !important; }
+.page-decor-15 { width: 185px !important; height: 185px !important; left: 60px !important; top: 370vh !important; opacity: .46 !important; }
+
+/* Cards remain readable, but decorations exist outside them */
+.card,
+.about-box,
+.contact-box,
+.capabilities {
+  background:
+    linear-gradient(180deg, rgba(28,28,28,.90), rgba(8,8,8,.86)) !important;
+  backdrop-filter: blur(18px) !important;
+  position: relative !important;
+  z-index: 4 !important;
+}
+
+/* Hide any overflow inside cards so no animation crosses text areas */
+.card,
+.about-box,
+.contact-box,
+.capabilities {
+  overflow: hidden !important;
+}
+
+@media (max-width: 1320px) {
+  .page-decor-1 { left: -72px !important; }
+  .page-decor-2 { right: -72px !important; }
+  .page-decor-3 { left: 120px !important; }
+  .page-decor-4 { right: 120px !important; }
+  .page-decor-7 { left: 140px !important; }
+  .page-decor-8 { right: 140px !important; }
+
+  .page-decor-9 { left: -86px !important; }
+  .page-decor-10 { right: -86px !important; }
+  .page-decor-11 { left: -24px !important; }
+  .page-decor-12 { right: -24px !important; }
+  .page-decor-13 { left: -88px !important; }
+  .page-decor-14 { right: -88px !important; }
+  .page-decor-15 { left: -24px !important; }
+}
+
+@media (max-width: 900px) {
+  .page-decor { display: none !important; }
+}

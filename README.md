@@ -1,8 +1,7 @@
-# Hepterakt Studios Website V20
+# Hepterakt Studios Website V21
 
-Focused fixes:
-- Adjusted only the header/logo area and decorative cube behavior.
-- Header logo is compact, transparent and not inside a black square.
-- Favicon remains enabled.
-- Cubes keep a white/original look.
-- Lower decorations that appeared inside cards/text boxes are hidden.
+Fixes:
+- Restored decorative cubes along the full page.
+- Decorative cubes now use white Lottie variants while keeping dark outlines.
+- Cubes are moved into outer margin spaces instead of cards/text boxes.
+- Header logo remains compact, transparent and favicon remains enabled.
