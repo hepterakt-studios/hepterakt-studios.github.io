@@ -853,3 +853,137 @@ h1 {
     height: 42px !important;
   }
 }
+
+
+/* V24 FINAL CUBE POSITION/COLOR FIX */
+
+/* Header/logo safety: compact logo, no box */
+.brand-mark,
+.site-header.is-scrolled .brand-mark,
+.site-header.logo-only .brand-mark {
+  width: 46px !important;
+  height: 46px !important;
+  min-width: 46px !important;
+  min-height: 46px !important;
+  max-width: 46px !important;
+  max-height: 46px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+
+.brand-mark img {
+  width: 46px !important;
+  height: 46px !important;
+  max-width: 46px !important;
+  max-height: 46px !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,.22)) !important;
+}
+
+/* Restore all decorative cubes and make them actually white. */
+.page-decor,
+.page-decor-1,
+.page-decor-2,
+.page-decor-3,
+.page-decor-4,
+.page-decor-5,
+.page-decor-6,
+.page-decor-7,
+.page-decor-8,
+.page-decor-9,
+.page-decor-10,
+.page-decor-11,
+.page-decor-12,
+.page-decor-13,
+.page-decor-14,
+.page-decor-15 {
+  display: block !important;
+  visibility: visible !important;
+}
+
+.page-decor {
+  position: absolute !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
+  opacity: 1 !important;
+  filter: drop-shadow(0 0 12px rgba(255,255,255,.12)) !important;
+}
+
+.page-decor lottie-player {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* First screen: keep the existing feeling, but not too close to the center text. */
+.page-decor-1  { width: 190px !important; height: 190px !important; left: 42px !important;  top: 31vh !important; opacity: .92 !important; }
+.page-decor-2  { width: 190px !important; height: 190px !important; right: 42px !important; top: 31vh !important; opacity: .92 !important; }
+.page-decor-3  { width: 180px !important; height: 180px !important; left: 230px !important; top: 23vh !important; opacity: .82 !important; }
+.page-decor-4  { width: 180px !important; height: 180px !important; right: 230px !important; top: 23vh !important; opacity: .82 !important; }
+
+.page-decor-5  { width: 170px !important; height: 170px !important; left: 54px !important;  top: 68vh !important; opacity: .80 !important; }
+.page-decor-6  { width: 170px !important; height: 170px !important; right: 54px !important; top: 68vh !important; opacity: .80 !important; }
+.page-decor-7  { width: 160px !important; height: 160px !important; left: 245px !important; top: 72vh !important; opacity: .72 !important; }
+.page-decor-8  { width: 160px !important; height: 160px !important; right: 245px !important; top: 72vh !important; opacity: .72 !important; }
+
+/* Lower page: move cubes away from cards. No cube starts underneath the card area. */
+.page-decor-9  { width: 175px !important; height: 175px !important; left: 22px !important;  top: 153vh !important; opacity: .74 !important; }
+.page-decor-10 { width: 175px !important; height: 175px !important; right: 22px !important; top: 169vh !important; opacity: .74 !important; }
+
+.page-decor-11 { width: 160px !important; height: 160px !important; left: 26px !important;  top: 232vh !important; opacity: .62 !important; }
+.page-decor-12 { width: 160px !important; height: 160px !important; right: 26px !important; top: 250vh !important; opacity: .62 !important; }
+
+.page-decor-13 { width: 170px !important; height: 170px !important; left: 22px !important;  top: 305vh !important; opacity: .64 !important; }
+.page-decor-14 { width: 170px !important; height: 170px !important; right: 22px !important; top: 337vh !important; opacity: .64 !important; }
+.page-decor-15 { width: 150px !important; height: 150px !important; left: 40px !important; top: 386vh !important; opacity: .52 !important; }
+
+/* Content/cards always above decorations; cards are opaque enough that cubes do not show through. */
+.section-content,
+.card,
+.about-box,
+.contact-box,
+.capabilities {
+  position: relative !important;
+  z-index: 5 !important;
+}
+
+.card,
+.about-box,
+.contact-box,
+.capabilities {
+  background:
+    linear-gradient(180deg, rgba(28,28,28,.94), rgba(8,8,8,.92)) !important;
+  backdrop-filter: blur(18px) !important;
+  overflow: hidden !important;
+}
+
+/* The main center cube remains above the decorative layer. */
+.center-cube {
+  z-index: 4 !important;
+}
+
+@media (max-width: 1320px) {
+  .page-decor-1  { left: 12px !important; }
+  .page-decor-2  { right: 12px !important; }
+  .page-decor-3  { left: 150px !important; }
+  .page-decor-4  { right: 150px !important; }
+  .page-decor-5  { left: 16px !important; }
+  .page-decor-6  { right: 16px !important; }
+  .page-decor-7  { left: 170px !important; }
+  .page-decor-8  { right: 170px !important; }
+
+  .page-decor-9  { left: 10px !important; }
+  .page-decor-10 { right: 10px !important; }
+  .page-decor-11 { left: 10px !important; }
+  .page-decor-12 { right: 10px !important; }
+  .page-decor-13 { left: 10px !important; }
+  .page-decor-14 { right: 10px !important; }
+  .page-decor-15 { left: 16px !important; }
+}
+
+@media (max-width: 900px) {
+  .page-decor { display: none !important; }
+}
