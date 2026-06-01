@@ -1,6 +1,7 @@
-# Hepterakt Studios Website V11
+# Hepterakt Studios Website V12
 
 Changes:
-- Decorative cube icons are brighter/white.
-- Icons are larger and moved outward from text/cards.
-- No fire, no coin, no loading, no scroll label.
+- Decorative cube icons are larger and much brighter.
+- Decorative icons are moved out of the text boxes/cards.
+- Icons sit in the empty margin space between the content and screen edges.
+- Main cube remains centered.
