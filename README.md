@@ -1,6 +1,7 @@
-# Hepterakt Studios Website V13
+# Hepterakt Studios Website V14
 
 Changes:
-- Decorative cube icons doubled in size.
-- Added one more decorative cube icon.
-- Icons are brighter/whiter and remain in the outside margin spaces.
+- Added the two new uploaded cube Lottie animations: cube-slider and cube-stack.
+- More cube decorations across the full site.
+- Decorations are large, white, and placed in empty side spaces.
+- Main center cube remains unchanged.
