@@ -1,7 +1,7 @@
-# Hepterakt Studios Website V14
+# Hepterakt Studios Website V15
 
 Changes:
-- Added the two new uploaded cube Lottie animations: cube-slider and cube-stack.
-- More cube decorations across the full site.
-- Decorations are large, white, and placed in empty side spaces.
-- Main center cube remains unchanged.
+- New uploaded cube decorations now match the visual size of the others.
+- Decorations in the hero were moved upward.
+- The first screen feels balanced immediately on site entry.
+- Cubes remain in empty side spaces, not on top of text/cards.

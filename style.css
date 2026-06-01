@@ -71,24 +71,26 @@ body::before {
   height: 100%;
 }
 
-.page-decor-1 { width: 250px; height: 250px; left: 36px; top: 31vh; opacity: .74; }
-.page-decor-2 { width: 220px; height: 220px; right: 38px; top: 32vh; opacity: .68; }
-.page-decor-3 { width: 235px; height: 235px; left: 245px; top: 23vh; opacity: .62; }
-.page-decor-4 { width: 220px; height: 220px; right: 245px; top: 24vh; opacity: .6; }
+/* HERO: balanced sizes, moved upward and kept in the empty side spaces */
+.page-decor-1 { width: 210px; height: 210px; left: 48px; top: 25vh; opacity: .72; }
+.page-decor-2 { width: 210px; height: 210px; right: 54px; top: 25vh; opacity: .68; }
+.page-decor-3 { width: 205px; height: 205px; left: 270px; top: 18vh; opacity: .62; }
+.page-decor-4 { width: 205px; height: 205px; right: 270px; top: 18vh; opacity: .6; }
 
-.page-decor-5 { width: 230px; height: 230px; left: 58px; top: 78vh; opacity: .58; }
-.page-decor-6 { width: 235px; height: 235px; right: 56px; top: 80vh; opacity: .58; }
-.page-decor-7 { width: 210px; height: 210px; left: 270px; top: 88vh; opacity: .5; }
-.page-decor-8 { width: 215px; height: 215px; right: 270px; top: 90vh; opacity: .5; }
+.page-decor-5 { width: 195px; height: 195px; left: 70px; top: 63vh; opacity: .56; }
+.page-decor-6 { width: 195px; height: 195px; right: 72px; top: 63vh; opacity: .56; }
+.page-decor-7 { width: 190px; height: 190px; left: 285px; top: 68vh; opacity: .5; }
+.page-decor-8 { width: 190px; height: 190px; right: 285px; top: 68vh; opacity: .5; }
 
-.page-decor-9 { width: 250px; height: 250px; left: 20px; top: 150vh; opacity: .56; }
-.page-decor-10 { width: 245px; height: 245px; right: 20px; top: 168vh; opacity: .56; }
-.page-decor-11 { width: 220px; height: 220px; left: 180px; top: 205vh; opacity: .48; }
-.page-decor-12 { width: 225px; height: 225px; right: 180px; top: 220vh; opacity: .48; }
+/* LOWER SITE: spread through margins, away from cards/text */
+.page-decor-9 { width: 215px; height: 215px; left: 34px; top: 142vh; opacity: .54; }
+.page-decor-10 { width: 215px; height: 215px; right: 34px; top: 156vh; opacity: .54; }
+.page-decor-11 { width: 200px; height: 200px; left: 190px; top: 198vh; opacity: .46; }
+.page-decor-12 { width: 200px; height: 200px; right: 190px; top: 214vh; opacity: .46; }
 
-.page-decor-13 { width: 235px; height: 235px; left: 38px; top: 286vh; opacity: .5; }
-.page-decor-14 { width: 245px; height: 245px; right: 38px; top: 320vh; opacity: .5; }
-.page-decor-15 { width: 225px; height: 225px; left: 220px; top: 370vh; opacity: .42; }
+.page-decor-13 { width: 205px; height: 205px; left: 42px; top: 278vh; opacity: .48; }
+.page-decor-14 { width: 205px; height: 205px; right: 42px; top: 310vh; opacity: .48; }
+.page-decor-15 { width: 195px; height: 195px; left: 220px; top: 355vh; opacity: .4; }
 
 .header {
   width: min(1180px, calc(100% - 32px));
@@ -341,10 +343,10 @@ h1 {
 @media (max-width: 1320px) {
   .page-decor-1 { left: 18px; }
   .page-decor-2 { right: 18px; }
-  .page-decor-3 { left: 185px; }
-  .page-decor-4 { right: 185px; }
-  .page-decor-7 { left: 200px; }
-  .page-decor-8 { right: 200px; }
+  .page-decor-3 { left: 190px; }
+  .page-decor-4 { right: 190px; }
+  .page-decor-7 { left: 210px; }
+  .page-decor-8 { right: 210px; }
 }
 
 @media (max-width: 900px) {
