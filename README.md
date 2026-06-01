@@ -1,10 +1,8 @@
-# Hepterakt Studios Website V8 Final Hero
+# Hepterakt Studios Website V10
 
-Final hero correction:
-- No loading overlay.
-- No scroll text.
-- No central static logo.
-- Modular cube Lottie is large and centered.
-- Fire Lottie is small on the left.
-- Coin/info Lottie is small on the right.
-- Intro content starts only after the hero section.
+Changes:
+- Removed fire and coin animations.
+- Added the two new small cube Lottie animations as subtle decorations.
+- Decorations are placed around the hero and lower sections without breaking layout.
+- Main modular cube remains centered and large.
+- No loading overlay and no Scroll text.

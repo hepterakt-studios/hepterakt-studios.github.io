@@ -8,16 +8,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=10" />
 </head>
 <body>
-  <div class="site-glow site-glow-one"></div>
-  <div class="site-glow site-glow-two"></div>
+  <div class="bg-glow"></div>
   <div class="grain"></div>
 
   <header class="header">
     <a class="brand" href="#home" aria-label="Hepterakt Studios home">
-      <img src="assets/hepterakt-symbol.png" alt="Hepterakt Studios symbol" class="brand-logo" />
+      <img src="assets/hepterakt-symbol.png?v=10" alt="Hepterakt Studios symbol" class="brand-logo" />
       <span class="brand-text">
         <strong>HEPTERAKT</strong>
         <small>STUDIOS</small>
@@ -34,84 +33,126 @@
 
   <main id="home">
     <section class="hero">
-      <div class="hero-visual">
-        <div class="side-lottie side-left" aria-hidden="true">
-          <lottie-player src="assets/lottie/energy-fire.json" background="transparent" speed=".75" loop autoplay></lottie-player>
+      <div class="decor decor-hero-left-top">
+        <lottie-player src="assets/lottie/decor-tricube.json?v=10" background="transparent" speed="0.75" loop autoplay></lottie-player>
+      </div>
+
+      <div class="decor decor-hero-left-bottom">
+        <lottie-player src="assets/lottie/decor-cubes.json?v=10" background="transparent" speed="0.85" loop autoplay></lottie-player>
+      </div>
+
+      <div class="decor decor-hero-right-top">
+        <lottie-player src="assets/lottie/decor-cubes.json?v=10" background="transparent" speed="0.7" loop autoplay></lottie-player>
+      </div>
+
+      <div class="decor decor-hero-right-bottom">
+        <lottie-player src="assets/lottie/decor-tricube.json?v=10" background="transparent" speed="0.9" loop autoplay></lottie-player>
+      </div>
+
+      <div class="center-cube">
+        <div class="cube-light"></div>
+        <lottie-player src="assets/lottie/main-cube.json?v=10" background="transparent" speed="1" loop autoplay></lottie-player>
+      </div>
+    </section>
+
+    <section id="intro" class="intro-section decorated-section">
+      <div class="decor decor-section-left">
+        <lottie-player src="assets/lottie/decor-tricube.json?v=10" background="transparent" speed="0.8" loop autoplay></lottie-player>
+      </div>
+      <div class="decor decor-section-right">
+        <lottie-player src="assets/lottie/decor-cubes.json?v=10" background="transparent" speed="0.75" loop autoplay></lottie-player>
+      </div>
+
+      <div class="section-content">
+        <p class="eyebrow">Independent creative studio</p>
+        <h1>Games, websites and interactive digital experiences.</h1>
+        <p class="hero-description">
+          Hepterakt Studios creates digital worlds with atmosphere, design, code and a clean futuristic identity.
+        </p>
+
+        <div class="actions">
+          <a class="button primary" href="#projects">View Projects</a>
+          <a class="button secondary" href="mailto:hepteraktstudios@gmail.com">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section decorated-section">
+      <div class="decor decor-projects-one">
+        <lottie-player src="assets/lottie/decor-cubes.json?v=10" background="transparent" speed="0.8" loop autoplay></lottie-player>
+      </div>
+      <div class="decor decor-projects-two">
+        <lottie-player src="assets/lottie/decor-tricube.json?v=10" background="transparent" speed="0.85" loop autoplay></lottie-player>
+      </div>
+
+      <div class="section-content">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>What we are building</h2>
+          <p>A focused home for games, websites and interactive experiments from Hepterakt Studios.</p>
         </div>
 
-        <div class="cube-stage">
-          <div class="cube-glow"></div>
-          <lottie-player class="main-cube" src="assets/lottie/modular-cube.json" background="transparent" speed="1" loop autoplay></lottie-player>
+        <div class="cards">
+          <article class="card">
+            <span class="card-label">Game</span>
+            <h3>Bears Nightmare</h3>
+            <p>A dark pixel-art adventure built around atmosphere, mystery and survival.</p>
+            <small>In development</small>
+          </article>
+
+          <article class="card">
+            <span class="card-label">Websites</span>
+            <h3>Web Projects</h3>
+            <p>Creative websites, landing pages and digital identities for future projects.</p>
+            <small>Coming soon</small>
+          </article>
+
+          <article class="card">
+            <span class="card-label">Experiences</span>
+            <h3>Interactive Worlds</h3>
+            <p>Experimental interfaces, interactive scenes and immersive digital experiences.</p>
+            <small>Exploration</small>
+          </article>
         </div>
+      </div>
+    </section>
 
-        <div class="side-lottie side-right" aria-hidden="true">
-          <lottie-player src="assets/lottie/info-coin.json" background="transparent" speed=".75" loop autoplay></lottie-player>
+    <section id="about" class="section about-box decorated-section">
+      <div class="decor decor-about-left">
+        <lottie-player src="assets/lottie/decor-tricube.json?v=10" background="transparent" speed="0.7" loop autoplay></lottie-player>
+      </div>
+      <div class="decor decor-about-right">
+        <lottie-player src="assets/lottie/decor-cubes.json?v=10" background="transparent" speed="0.8" loop autoplay></lottie-player>
+      </div>
+
+      <div class="section-content">
+        <p class="eyebrow">About</p>
+        <h2>A studio for creative digital worlds.</h2>
+        <p>
+          Hepterakt Studios is an independent creative studio focused on games, websites and interactive digital experiences.
+          Our work combines visual identity, atmosphere, storytelling and technology.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-box decorated-section">
+      <div class="decor decor-contact-left">
+        <lottie-player src="assets/lottie/decor-cubes.json?v=10" background="transparent" speed="0.75" loop autoplay></lottie-player>
+      </div>
+      <div class="decor decor-contact-right">
+        <lottie-player src="assets/lottie/decor-tricube.json?v=10" background="transparent" speed="0.8" loop autoplay></lottie-player>
+      </div>
+
+      <div class="section-content contact-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let's build something.</h2>
+          <p>For projects, collaborations or business inquiries.</p>
         </div>
-      </div>
-    </section>
-
-    <section id="intro" class="intro-section">
-      <p class="eyebrow">Independent creative studio</p>
-      <h1>Games, websites and interactive digital experiences.</h1>
-      <p class="hero-description">
-        Hepterakt Studios creates digital worlds with atmosphere, design, code and a clean futuristic identity.
-      </p>
-
-      <div class="hero-actions">
-        <a class="button primary" href="#projects">View Projects</a>
-        <a class="button secondary" href="mailto:hepteraktstudios@gmail.com">Contact</a>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Projects</p>
-        <h2>What we are building</h2>
-        <p>A focused home for games, websites and interactive experiments from Hepterakt Studios.</p>
-      </div>
-
-      <div class="cards">
-        <article class="card">
-          <span class="card-label">Game</span>
-          <h3>Bears Nightmare</h3>
-          <p>A dark pixel-art adventure built around atmosphere, mystery and survival.</p>
-          <small>In development</small>
-        </article>
-
-        <article class="card">
-          <span class="card-label">Websites</span>
-          <h3>Web Projects</h3>
-          <p>Creative websites, landing pages and digital identities for future projects.</p>
-          <small>Coming soon</small>
-        </article>
-
-        <article class="card">
-          <span class="card-label">Experiences</span>
-          <h3>Interactive Worlds</h3>
-          <p>Experimental interfaces, interactive scenes and immersive digital experiences.</p>
-          <small>Exploration</small>
-        </article>
-      </div>
-    </section>
-
-    <section id="about" class="section about-box">
-      <p class="eyebrow">About</p>
-      <h2>A studio for creative digital worlds.</h2>
-      <p>
-        Hepterakt Studios is an independent creative studio focused on games, websites and interactive digital experiences.
-        Our work combines visual identity, atmosphere, storytelling and technology.
-      </p>
-    </section>
-
-    <section id="contact" class="section contact-box">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>Let's build something.</h2>
-        <p>For projects, collaborations or business inquiries.</p>
-      </div>
-      <div class="contact-actions">
-        <a class="button primary" href="mailto:hepteraktstudios@gmail.com">Email</a>
-        <a class="button secondary" href="https://github.com/hepterakt-studios" target="_blank" rel="noreferrer">GitHub</a>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:hepteraktstudios@gmail.com">Email</a>
+          <a class="button secondary" href="https://github.com/hepterakt-studios" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
       </div>
     </section>
   </main>
@@ -122,6 +163,6 @@
   </footer>
 
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="script.js"></script>
+  <script src="script.js?v=10"></script>
 </body>
 </html>
