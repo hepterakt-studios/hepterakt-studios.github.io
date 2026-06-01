@@ -1,8 +1,6 @@
-# Hepterakt Studios Website V10
+# Hepterakt Studios Website V11
 
 Changes:
-- Removed fire and coin animations.
-- Added the two new small cube Lottie animations as subtle decorations.
-- Decorations are placed around the hero and lower sections without breaking layout.
-- Main modular cube remains centered and large.
-- No loading overlay and no Scroll text.
+- Decorative cube icons are brighter/white.
+- Icons are larger and moved outward from text/cards.
+- No fire, no coin, no loading, no scroll label.

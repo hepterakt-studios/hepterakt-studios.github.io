@@ -134,13 +134,13 @@ body::before {
 .decor {
   position: absolute;
   pointer-events: none;
-  z-index: 1;
-  opacity: .42;
+  z-index: 0;
+  opacity: .9;
   filter:
     grayscale(1)
-    contrast(1.28)
-    brightness(1.15)
-    drop-shadow(0 0 16px rgba(255,255,255,.12));
+    contrast(1.75)
+    brightness(1.75)
+    drop-shadow(0 0 20px rgba(255,255,255,.20));
 }
 
 .decor lottie-player {
@@ -149,39 +149,40 @@ body::before {
 }
 
 .decor-hero-left-top {
-  width: 72px;
-  height: 72px;
-  left: clamp(34px, 9vw, 145px);
-  top: 34%;
+  width: 100px;
+  height: 100px;
+  left: clamp(12px, 6vw, 90px);
+  top: 31%;
+  opacity: .82;
 }
 
 .decor-hero-left-bottom {
-  width: 58px;
-  height: 58px;
-  left: clamp(78px, 13vw, 210px);
-  bottom: 18%;
-  opacity: .32;
+  width: 82px;
+  height: 82px;
+  left: clamp(40px, 10vw, 160px);
+  bottom: 14%;
+  opacity: .58;
 }
 
 .decor-hero-right-top {
-  width: 68px;
-  height: 68px;
-  right: clamp(82px, 12vw, 200px);
-  top: 39%;
-  opacity: .36;
+  width: 96px;
+  height: 96px;
+  right: clamp(38px, 9vw, 150px);
+  top: 35%;
+  opacity: .62;
 }
 
 .decor-hero-right-bottom {
-  width: 54px;
-  height: 54px;
-  right: clamp(42px, 9vw, 150px);
-  bottom: 19%;
-  opacity: .3;
+  width: 78px;
+  height: 78px;
+  right: clamp(8px, 6vw, 90px);
+  bottom: 14%;
+  opacity: .55;
 }
 
 .decorated-section {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .section-content {
@@ -201,19 +202,19 @@ body::before {
 }
 
 .decor-section-left {
-  width: 54px;
-  height: 54px;
-  left: 5%;
-  top: 22%;
-  opacity: .24;
+  width: 90px;
+  height: 90px;
+  left: -36px;
+  top: 18%;
+  opacity: .42;
 }
 
 .decor-section-right {
-  width: 72px;
-  height: 72px;
-  right: 7%;
-  bottom: 18%;
-  opacity: .23;
+  width: 110px;
+  height: 110px;
+  right: -42px;
+  bottom: 12%;
+  opacity: .38;
 }
 
 .eyebrow {
@@ -294,19 +295,19 @@ h1 {
 }
 
 .decor-projects-one {
-  width: 62px;
-  height: 62px;
-  right: 2%;
-  top: 12%;
-  opacity: .22;
+  width: 100px;
+  height: 100px;
+  right: -46px;
+  top: 4%;
+  opacity: .34;
 }
 
 .decor-projects-two {
-  width: 50px;
-  height: 50px;
-  left: 3%;
-  bottom: 12%;
-  opacity: .2;
+  width: 84px;
+  height: 84px;
+  left: -38px;
+  bottom: 8%;
+  opacity: .32;
 }
 
 .cards {
@@ -356,19 +357,19 @@ h1 {
 .about-box p { max-width: 780px; }
 
 .decor-about-left {
-  width: 64px;
-  height: 64px;
-  left: 4%;
-  top: 18%;
-  opacity: .22;
+  width: 105px;
+  height: 105px;
+  left: -42px;
+  top: 10%;
+  opacity: .34;
 }
 
 .decor-about-right {
-  width: 54px;
-  height: 54px;
-  right: 5%;
-  bottom: 18%;
-  opacity: .2;
+  width: 94px;
+  height: 94px;
+  right: -36px;
+  bottom: 10%;
+  opacity: .32;
 }
 
 .contact-grid {
@@ -379,19 +380,19 @@ h1 {
 }
 
 .decor-contact-left {
-  width: 50px;
-  height: 50px;
-  left: 4%;
-  bottom: 14%;
-  opacity: .22;
+  width: 90px;
+  height: 90px;
+  left: -36px;
+  bottom: 10%;
+  opacity: .34;
 }
 
 .decor-contact-right {
-  width: 62px;
-  height: 62px;
-  right: 5%;
-  top: 15%;
-  opacity: .2;
+  width: 104px;
+  height: 104px;
+  right: -42px;
+  top: 8%;
+  opacity: .32;
 }
 
 .footer {
