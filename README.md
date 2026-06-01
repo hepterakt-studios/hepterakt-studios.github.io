@@ -1,7 +1,9 @@
-# Hepterakt Studios Website V15
+# Hepterakt Studios Website V16
 
 Changes:
-- New uploaded cube decorations now match the visual size of the others.
-- Decorations in the hero were moved upward.
-- The first screen feels balanced immediately on site entry.
-- Cubes remain in empty side spaces, not on top of text/cards.
+- Uses transparent logo in the sticky top bar.
+- Header stays fixed/sticky during scroll.
+- Brand text disappears letter-by-letter from the end while scrolling.
+- When fully scrolled, only the logo remains.
+- Wordmark spacing/style adjusted to feel closer to the Hepterakt logo.
+- Added more professional text and Nexo Finance without a dot.
