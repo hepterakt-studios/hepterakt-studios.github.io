@@ -1,9 +1,8 @@
-# Hepterakt Studios Website V16
+# Hepterakt Studios Website V17
 
 Changes:
-- Uses transparent logo in the sticky top bar.
-- Header stays fixed/sticky during scroll.
-- Brand text disappears letter-by-letter from the end while scrolling.
-- When fully scrolled, only the logo remains.
-- Wordmark spacing/style adjusted to feel closer to the Hepterakt logo.
-- Added more professional text and Nexo Finance without a dot.
+- Header logo now uses a cleaner transparent version.
+- Removed the black square/border around the logo.
+- Logo is larger and sits freely in the sticky top bar.
+- Decorative cubes are brighter/whiter.
+- Side cubes moved a little farther away from central content.

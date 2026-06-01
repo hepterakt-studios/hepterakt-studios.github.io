@@ -454,3 +454,95 @@ h1 {
   .cards, .contact-grid, .capability-grid { grid-template-columns: 1fr; }
   .footer { flex-direction: column; }
 }
+
+
+/* V17 FIX: logo must be free, not inside a black square */
+.brand {
+  gap: 16px;
+}
+
+.brand-mark {
+  width: 72px !important;
+  height: 72px !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+
+.site-header.is-scrolled .brand-mark {
+  width: 62px !important;
+  height: 62px !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.site-header.logo-only .brand-mark {
+  width: 64px !important;
+  height: 64px !important;
+}
+
+.brand-mark img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  filter:
+    brightness(1.22)
+    contrast(1.18)
+    drop-shadow(0 0 12px rgba(255,255,255,.28)) !important;
+}
+
+/* V17 FIX: make the decorative cubes whiter and more visible */
+.page-decor {
+  opacity: .88 !important;
+  filter:
+    grayscale(1)
+    saturate(0)
+    contrast(3.15)
+    brightness(4.2)
+    drop-shadow(0 0 34px rgba(255,255,255,.34)) !important;
+}
+
+.page-decor-5,
+.page-decor-6,
+.page-decor-7,
+.page-decor-8,
+.page-decor-9,
+.page-decor-10,
+.page-decor-11,
+.page-decor-12,
+.page-decor-13,
+.page-decor-14,
+.page-decor-15 {
+  opacity: .74 !important;
+}
+
+/* Push side cubes a little farther from central content */
+.page-decor-1 { left: -12px !important; }
+.page-decor-2 { right: -12px !important; }
+.page-decor-3 { left: 220px !important; }
+.page-decor-4 { right: 220px !important; }
+.page-decor-5 { left: 12px !important; }
+.page-decor-6 { right: 12px !important; }
+.page-decor-7 { left: 240px !important; }
+.page-decor-8 { right: 240px !important; }
+
+@media (max-width: 1320px) {
+  .page-decor-1 { left: -22px !important; }
+  .page-decor-2 { right: -22px !important; }
+  .page-decor-3 { left: 160px !important; }
+  .page-decor-4 { right: 160px !important; }
+  .page-decor-7 { left: 178px !important; }
+  .page-decor-8 { right: 178px !important; }
+}
+
+@media (max-width: 900px) {
+  .brand-mark,
+  .site-header.is-scrolled .brand-mark,
+  .site-header.logo-only .brand-mark {
+    width: 54px !important;
+    height: 54px !important;
+  }
+}
