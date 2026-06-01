@@ -1,7 +1,8 @@
-# Hepterakt Studios Website V22
+# Hepterakt Studios Website V23
 
-Emergency correction:
+Calm fix:
 - Restored all decorative cubes.
-- Reverted decorative Lotties to original files instead of generated white versions.
-- Header logo remains compact and transparent.
-- Cubes are positioned in side spaces and not hidden.
+- Decorative cube Lotties are now truly white with black outlines.
+- Cubes are not too far outside the viewport.
+- Cubes are placed in side spaces and cards stay above them.
+- Header logo remains compact and favicon remains active.
