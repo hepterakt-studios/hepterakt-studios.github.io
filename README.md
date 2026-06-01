@@ -1,7 +1,7 @@
-# Hepterakt Studios Website V21
+# Hepterakt Studios Website V22
 
-Fixes:
-- Restored decorative cubes along the full page.
-- Decorative cubes now use white Lottie variants while keeping dark outlines.
-- Cubes are moved into outer margin spaces instead of cards/text boxes.
-- Header logo remains compact, transparent and favicon remains enabled.
+Emergency correction:
+- Restored all decorative cubes.
+- Reverted decorative Lotties to original files instead of generated white versions.
+- Header logo remains compact and transparent.
+- Cubes are positioned in side spaces and not hidden.
