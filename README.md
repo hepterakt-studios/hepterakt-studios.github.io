@@ -1,8 +1,8 @@
-# Hepterakt Studios Website V17
+# Hepterakt Studios Website V20
 
-Changes:
-- Header logo now uses a cleaner transparent version.
-- Removed the black square/border around the logo.
-- Logo is larger and sits freely in the sticky top bar.
-- Decorative cubes are brighter/whiter.
-- Side cubes moved a little farther away from central content.
+Focused fixes:
+- Adjusted only the header/logo area and decorative cube behavior.
+- Header logo is compact, transparent and not inside a black square.
+- Favicon remains enabled.
+- Cubes keep a white/original look.
+- Lower decorations that appeared inside cards/text boxes are hidden.

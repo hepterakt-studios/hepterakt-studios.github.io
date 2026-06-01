@@ -546,3 +546,274 @@ h1 {
     height: 54px !important;
   }
 }
+
+
+/* V18 HARD FIX: compact sticky header logo */
+.site-header {
+  height: 78px !important;
+}
+
+.site-header.is-scrolled {
+  height: 66px !important;
+}
+
+.header-inner {
+  width: min(1180px, calc(100% - 32px)) !important;
+}
+
+.brand {
+  gap: 12px !important;
+}
+
+.brand-mark,
+.site-header.is-scrolled .brand-mark,
+.site-header.logo-only .brand-mark {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  max-width: 44px !important;
+  max-height: 44px !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+
+.brand-mark img {
+  width: 44px !important;
+  height: 44px !important;
+  object-fit: contain !important;
+  display: block !important;
+  filter:
+    brightness(1.18)
+    contrast(1.16)
+    drop-shadow(0 0 8px rgba(255,255,255,.28)) !important;
+}
+
+.brand-line {
+  font-size: .82rem !important;
+  letter-spacing: .32em !important;
+}
+
+.brand-subline {
+  font-size: .56rem !important;
+  letter-spacing: .4em !important;
+}
+
+/* keep first screen balanced */
+.hero {
+  height: calc(100vh - 78px) !important;
+}
+
+/* V18 HARD FIX: white cubes, but never over cards/text */
+.page-decor {
+  z-index: 0 !important;
+  opacity: .72 !important;
+  filter:
+    grayscale(1)
+    saturate(0)
+    contrast(3.2)
+    brightness(4.35)
+    drop-shadow(0 0 28px rgba(255,255,255,.28)) !important;
+}
+
+/* Only use decorative cubes around the hero and far sides. */
+.page-decor-1 { width: 190px !important; height: 190px !important; left: -28px !important; top: 26vh !important; opacity: .66 !important; }
+.page-decor-2 { width: 190px !important; height: 190px !important; right: -28px !important; top: 26vh !important; opacity: .62 !important; }
+.page-decor-3 { width: 180px !important; height: 180px !important; left: 190px !important; top: 20vh !important; opacity: .54 !important; }
+.page-decor-4 { width: 180px !important; height: 180px !important; right: 190px !important; top: 20vh !important; opacity: .52 !important; }
+
+.page-decor-5 { width: 170px !important; height: 170px !important; left: -18px !important; top: 63vh !important; opacity: .46 !important; }
+.page-decor-6 { width: 170px !important; height: 170px !important; right: -18px !important; top: 63vh !important; opacity: .46 !important; }
+.page-decor-7 { width: 160px !important; height: 160px !important; left: 210px !important; top: 69vh !important; opacity: .38 !important; }
+.page-decor-8 { width: 160px !important; height: 160px !important; right: 210px !important; top: 69vh !important; opacity: .38 !important; }
+
+/* Remove the lower floating cubes that were showing through/over the cards. */
+.page-decor-9,
+.page-decor-10,
+.page-decor-11,
+.page-decor-12,
+.page-decor-13,
+.page-decor-14,
+.page-decor-15 {
+  display: none !important;
+}
+
+/* Make cards less transparent so background decorations don't appear inside text boxes. */
+.card,
+.about-box,
+.contact-box,
+.capabilities {
+  background:
+    linear-gradient(180deg, rgba(28,28,28,.88), rgba(8,8,8,.82)) !important;
+  backdrop-filter: blur(18px) !important;
+  position: relative !important;
+  z-index: 4 !important;
+}
+
+/* Restore clean section spacing after smaller header */
+.intro-section {
+  padding-top: 120px !important;
+}
+
+@media (max-width: 1320px) {
+  .page-decor-1 { left: -60px !important; }
+  .page-decor-2 { right: -60px !important; }
+  .page-decor-3 { left: 130px !important; }
+  .page-decor-4 { right: 130px !important; }
+  .page-decor-7 { left: 160px !important; }
+  .page-decor-8 { right: 160px !important; }
+}
+
+@media (max-width: 900px) {
+  .brand-mark,
+  .site-header.is-scrolled .brand-mark,
+  .site-header.logo-only .brand-mark,
+  .brand-mark img {
+    width: 42px !important;
+    height: 42px !important;
+  }
+}
+
+
+/* V19: favicon added + final compact logo safety */
+.brand-mark,
+.site-header.is-scrolled .brand-mark,
+.site-header.logo-only .brand-mark {
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  min-height: 42px !important;
+  max-width: 42px !important;
+  max-height: 42px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.brand-mark img {
+  width: 42px !important;
+  height: 42px !important;
+  max-width: 42px !important;
+  max-height: 42px !important;
+}
+
+
+/* V20 FOCUSED FIX */
+
+/* Header logo: small, clean, no square behind it */
+.site-header {
+  height: 78px !important;
+}
+
+.site-header.is-scrolled {
+  height: 66px !important;
+}
+
+.brand {
+  gap: 12px !important;
+}
+
+.brand-mark,
+.site-header.is-scrolled .brand-mark,
+.site-header.logo-only .brand-mark {
+  width: 46px !important;
+  height: 46px !important;
+  min-width: 46px !important;
+  min-height: 46px !important;
+  max-width: 46px !important;
+  max-height: 46px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+
+.brand-mark img {
+  width: 46px !important;
+  height: 46px !important;
+  max-width: 46px !important;
+  max-height: 46px !important;
+  object-fit: contain !important;
+  display: block !important;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,.22)) !important;
+}
+
+.brand-line {
+  font-size: .82rem !important;
+  letter-spacing: .32em !important;
+}
+
+.brand-subline {
+  font-size: .56rem !important;
+  letter-spacing: .4em !important;
+}
+
+/* Cubes: keep the white/original look, not dark gray */
+.page-decor {
+  opacity: .94 !important;
+  filter:
+    grayscale(1)
+    saturate(0)
+    contrast(1.55)
+    brightness(1.9)
+    drop-shadow(0 0 18px rgba(255,255,255,.18)) !important;
+}
+
+/* Keep decorations away from cards/text. Hero side cubes only. */
+.page-decor-1 { width: 185px !important; height: 185px !important; left: -34px !important; top: 27vh !important; }
+.page-decor-2 { width: 185px !important; height: 185px !important; right: -34px !important; top: 27vh !important; }
+.page-decor-3 { width: 175px !important; height: 175px !important; left: 170px !important; top: 22vh !important; }
+.page-decor-4 { width: 175px !important; height: 175px !important; right: 170px !important; top: 22vh !important; }
+
+.page-decor-5 { width: 165px !important; height: 165px !important; left: -22px !important; top: 64vh !important; opacity: .78 !important; }
+.page-decor-6 { width: 165px !important; height: 165px !important; right: -22px !important; top: 64vh !important; opacity: .78 !important; }
+.page-decor-7 { width: 155px !important; height: 155px !important; left: 190px !important; top: 69vh !important; opacity: .68 !important; }
+.page-decor-8 { width: 155px !important; height: 155px !important; right: 190px !important; top: 69vh !important; opacity: .68 !important; }
+
+/* Hide the lower cubes that were appearing inside/over cards. */
+.page-decor-9,
+.page-decor-10,
+.page-decor-11,
+.page-decor-12,
+.page-decor-13,
+.page-decor-14,
+.page-decor-15 {
+  display: none !important;
+}
+
+/* Cards are dark enough so no background decoration appears through them. */
+.card,
+.about-box,
+.contact-box,
+.capabilities {
+  background:
+    linear-gradient(180deg, rgba(28,28,28,.9), rgba(8,8,8,.86)) !important;
+  backdrop-filter: blur(18px) !important;
+  position: relative !important;
+  z-index: 4 !important;
+}
+
+@media (max-width: 1320px) {
+  .page-decor-1 { left: -58px !important; }
+  .page-decor-2 { right: -58px !important; }
+  .page-decor-3 { left: 125px !important; }
+  .page-decor-4 { right: 125px !important; }
+  .page-decor-7 { left: 145px !important; }
+  .page-decor-8 { right: 145px !important; }
+}
+
+@media (max-width: 900px) {
+  .brand-mark,
+  .site-header.is-scrolled .brand-mark,
+  .site-header.logo-only .brand-mark,
+  .brand-mark img {
+    width: 42px !important;
+    height: 42px !important;
+  }
+}
